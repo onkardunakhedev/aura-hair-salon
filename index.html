@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Modern Hair Salon & Studio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-sparkles"></i> First-time clients get 15% off any coloring or haircut service! Code: <strong>NEWGLOW</strong></span>
+        <a href="#booking" class="top-link">Claim Offer &rarr;</a>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-mark">AURA</span>
+                <span class="logo-sub">HAIR STUDIO</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#stylists" class="nav-link">Stylists</a>
+                <a href="#gallery" class="nav-link">Lookbook</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#booking" class="btn btn-primary nav-btn"><i class="fa-regular fa-calendar-check"></i> Book Now</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-star"></i> Voted Top Salon 2024
+            </div>
+            <h1 class="hero-title">Elevate Your Natural <span>Glow & Style</span></h1>
+            <p class="hero-subtitle">Bespoke cuts, precision coloring, and restorative hair treatments tailored to your unique beauty and confidence.</p>
+            
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary btn-lg"><i class="fa-solid fa-scissors"></i> Book Appointment</a>
+                <a href="#services" class="btn btn-outline btn-lg"><i class="fa-solid fa-list-check"></i> View Pricing</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">4.9★</span>
+                    <span class="stat-lbl">500+ Google Reviews</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">10+</span>
+                    <span class="stat-lbl">Master Stylists</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-lbl">Organic Products</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Features / Intro -->
+    <section class="section quick-features" id="about">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-scissors"></i></div>
+                    <h3>Precision Cutting</h3>
+                    <p>Tailored haircutting techniques sculpted specifically for your face shape, hair structure, and daily lifestyle.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Balayage & Color</h3>
+                    <p>Custom hand-painted blonding, rich dimensional brunette tones, and vibrant glossing treatments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Organic Scalp Spa</h3>
+                    <p>Nourishing botanical oils, head massage therapy, and deep keratin repair for luxurious hair health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header center">
+                <span class="sub-title">Our Menu</span>
+                <h2 class="section-title">Services & Pricing</h2>
+                <p class="section-desc">Transparent pricing designed for all hair types and styling goals.</p>
+            </div>
+
+            <!-- Service Category Filter -->
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="all">All Services</button>
+                <button class="tab-btn" data-tab="cut">Cut & Style</button>
+                <button class="tab-btn" data-tab="color">Color & Highlights</button>
+                <button class="tab-btn" data-tab="treat">Care & Spa</button>
+            </div>
+
+            <div class="services-grid" id="services-grid">
+                <!-- Haircuts -->
+                <div class="service-item" data-category="cut">
+                    <div class="service-info">
+                        <div class="service-head">
+                            <h4 class="service-name">Signature Haircut & Blowdry</h4>
+                            <span class="service-price">$85</span>
+                        </div>
+                        <p class="service-detail">Includes personal consultation, relaxing scalp massage, luxury shampoo, haircut, and signature blowout style.</p>
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 60 mins</span>
+                    </div>
+                    <button class="btn-select-service" data-service="Signature Haircut & Blowdry">Select</button>
+                </div>
+
+                <div class="service-item" data-category="cut">
+                    <div class="service-info">
+                        <div class="service-head">
+                            <h4 class="service-name">Gentlemen’s Precision Cut</h4>
+                            <span class="service-price">$55</span>
+                        </div>
+                        <p class="service-detail">Tailored scissor or clipper cut, hot towel finish, neck trim, and customized styling product application.</p>
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 45 mins</span>
+                    </div>
+                    <button class="btn-select-service" data-service="Gentlemen’s Precision Cut">Select</button>
+                </div>
+
+                <!-- Coloring -->
+                <div class="service-item" data-category="color">
+                    <div class="service-info">
+                        <div class="service-head">
+                            <h4 class="service-name">Custom Balayage & Gloss</h4>
+                            <span class="service-price">$220+</span>
+                        </div>
+                        <p class="service-detail">Hand-painted dimension for effortless sun-kissed hair. Includes custom toner, bond-builder protection, and style.</p>
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 150 mins</span>
+                    </div>
+                    <button class="btn-select-service" data-service="Custom Balayage & Gloss">Select</button>
+                </div>
+
+                <div class="service-item" data-category="color">
+                    <div class="service-info">
+                        <div class="service-head">
+                            <h4 class="service-name">Full Highlights & Root Retouch</h4>
+                            <span class="service-price">$185</span>
+                        </div>
+                        <p class="service-detail">Foil highlighting across crown and sides with root color match for full depth and seamless coverage.</p>
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 120 mins</span>
+                    </div>
+                    <button class="btn-select-service" data-service="Full Highlights & Root Retouch">Select</button>
+                </div>
+
+                <!-- Treatments -->
+                <div class="service-item" data-category="treat">
+                    <div class="service-info">
+                        <div class="service-head">
+                            <h4 class="service-name">Keratin Smoothing Treatment</h4>
+                            <span class="service-price">$195</span>
+                        </div>
+                        <p class="service-detail">Eliminates up to 95% of frizz, seals cuticles, and dramatically reduces drying time for up to 12 weeks.</p>
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 90 mins</span>
+                    </div>
+                    <button class="btn-select-service" data-service="Keratin Smoothing Treatment">Select</button>
+                </div>
+
+                <div class="service-item" data-category="treat">
+                    <div class="service-info">
+                        <div class="service-head">
+                            <h4 class="service-name">Scalp Detox & Deep Conditioning</h4>
+                            <span class="service-price">$75</span>
+                        </div>
+                        <p class="service-detail">Exfoliating botanical tea tree scrub followed by intense moisture hair mask under warm micro-mist therapy.</p>
+                        <span class="service-time"><i class="fa-regular fa-clock"></i> 45 mins</span>
+                    </div>
+                    <button class="btn-select-service" data-service="Scalp Detox & Deep Conditioning">Select</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stylist Section -->
+    <section class="section stylists-section" id="stylists">
+        <div class="container">
+            <div class="section-header center">
+                <span class="sub-title">Master Artists</span>
+                <h2 class="section-title">Meet Our Stylists</h2>
+                <p class="section-desc">Passionate experts dedicated to perfecting your personalized look.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="stylist-card">
+                    <div class="stylist-img-box">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=600" alt="Elena Rostova">
+                        <div class="stylist-social">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="stylist-info">
+                        <h3>Elena Rostova</h3>
+                        <span class="stylist-role">Founder & Creative Director</span>
+                        <p>Specialist in Balayage, Blonde Color Theory, and Textured Precision Cuts with 12+ years experience.</p>
+                        <a href="#booking" class="stylist-book-btn" data-stylist="Elena Rostova">Book with Elena &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="stylist-card">
+                    <div class="stylist-img-box">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="Sophia Chen">
+                        <div class="stylist-social">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="stylist-info">
+                        <h3>Sophia Chen</h3>
+                        <span class="stylist-role">Senior Color Specialist</span>
+                        <p>Master of dimensional brunettes, vibrant fashion colors, and silk press smoothing treatments.</p>
+                        <a href="#booking" class="stylist-book-btn" data-stylist="Sophia Chen">Book with Sophia &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="stylist-card">
+                    <div class="stylist-img-box">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" alt="Marcus Vance">
+                        <div class="stylist-social">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="stylist-info">
+                        <h3>Marcus Vance</h3>
+                        <span class="stylist-role">Barber & Men's Stylist</span>
+                        <p>Expert in modern fades, classic scissors cuts, razor shaping, and beard conditioning therapy.</p>
+                        <a href="#booking" class="stylist-book-btn" data-stylist="Marcus Vance">Book with Marcus &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook / Gallery -->
+    <section class="section gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header center">
+                <span class="sub-title">Real Results</span>
+                <h2 class="section-title">Client Transformations</h2>
+                <p class="section-desc">A glimpse inside our latest studio creations.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600" alt="Hair style 1">
+                    <div class="gallery-hover">
+                        <span>Golden Hour Balayage</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=600" alt="Hair style 2">
+                    <div class="gallery-hover">
+                        <span>Precision Bob Cut</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&q=80&w=600" alt="Hair style 3">
+                    <div class="gallery-hover">
+                        <span>Platinum Blonde Restoration</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&q=80&w=600" alt="Hair style 4">
+                    <div class="gallery-hover">
+                        <span>Soft Beach Waves & Highlights</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Form Section -->
+    <section class="section booking-section" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <span class="sub-title text-gold">Seamless Experience</span>
+                    <h2 class="booking-title">Book Your Salon Appointment</h2>
+                    <p>Select your desired service and preferred date. We'll instantly confirm your reservation.</p>
+
+                    <div class="contact-quick">
+                        <div class="c-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <p>742 Evergreen Terrace, Suite 102, New York, NY</p>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Direct Line</strong>
+                                <p>(555) 382-9011</p>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                <strong>Opening Hours</strong>
+                                <p>Tue - Sat: 9:00 AM - 7:00 PM | Sun-Mon: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-card">
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-title">
+                            <h3>Reserve Your Spot</h3>
+                            <p>Fast online scheduling in 3 easy steps</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="client-name">Full Name</label>
+                            <input type="text" id="client-name" placeholder="e.g. Sarah Jenkins" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="client-phone">Phone Number</label>
+                                <input type="tel" id="client-phone" placeholder="(555) 000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-email">Email Address</label>
+                                <input type="email" id="client-email" placeholder="sarah@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-select">Select Service</label>
+                                <select id="service-select" required>
+                                    <option value="" disabled selected>Choose a service...</option>
+                                    <option value="Signature Haircut & Blowdry">Signature Haircut & Blowdry ($85)</option>
+                                    <option value="Gentlemen’s Precision Cut">Gentlemen’s Precision Cut ($55)</option>
+                                    <option value="Custom Balayage & Gloss">Custom Balayage & Gloss ($220+)</option>
+                                    <option value="Full Highlights & Root Retouch">Full Highlights & Root Retouch ($185)</option>
+                                    <option value="Keratin Smoothing Treatment">Keratin Smoothing Treatment ($195)</option>
+                                    <option value="Scalp Detox & Deep Conditioning">Scalp Detox & Deep Conditioning ($75)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="stylist-select">Select Stylist</label>
+                                <select id="stylist-select">
+                                    <option value="Any Available Stylist">Any Available Stylist</option>
+                                    <option value="Elena Rostova">Elena Rostova (Creative Director)</option>
+                                    <option value="Sophia Chen">Sophia Chen (Colorist)</option>
+                                    <option value="Marcus Vance">Marcus Vance (Barber)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="booking-date">Preferred Date</label>
+                                <input type="date" id="booking-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-time">Preferred Time</label>
+                                <select id="booking-time" required>
+                                    <option value="" disabled selected>Select time...</option>
+                                    <option value="09:00 AM">09:00 AM</option>
+                                    <option value="10:30 AM">10:30 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="02:00 PM">02:00 PM</option>
+                                    <option value="04:00 PM">04:00 PM</option>
+                                    <option value="05:30 PM">05:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-calendar-check"></i> Confirm Booking</button>
+                    </form>
+
+                    <div id="booking-success" class="booking-success hidden">
+                        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <h3>Appointment Reserved!</h3>
+                        <p>Thank you <strong id="res-name"></strong>. We have saved your spot for <span id="res-service"></span> with <span id="res-stylist"></span> on <strong id="res-datetime"></strong>.</p>
+                        <p class="success-note">A confirmation SMS & email will arrive shortly with preparation instructions.</p>
+                        <button class="btn btn-outline btn-sm" id="btn-reset-booking">Book Another</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="sub-title">Client Reviews</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"Elena transformed my dull hair into the most gorgeous dimensional balayage I’ve ever had. I get compliments everywhere I go!"</p>
+                    <div class="client-meta">
+                        <strong>Jessica Taylor</strong>
+                        <span>Loyal Client since 2022</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"The scalp spa treatment is pure heaven. The atmosphere in Aura salon is super chic, relaxing, and incredibly welcoming."</p>
+                    <div class="client-meta">
+                        <strong>Amanda Miller</strong>
+                        <span>First Time Guest</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p>"Marcus gives the best precision cut in town. Always consistent, super clean studio, and great espresso while you wait."</p>
+                    <div class="client-meta">
+                        <strong>David Reynolds</strong>
+                        <span>Monthly Guest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Hours Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <span class="sub-title">Visit Us</span>
+                    <h2>Studio Location & Hours</h2>
+                    <p>Conveniently located in downtown district with complimentary client valet parking behind the building.</p>
+
+                    <div class="hours-table">
+                        <div class="hours-row">
+                            <span>Tuesday - Friday</span>
+                            <span>9:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="hours-row">
+                            <span>Saturday</span>
+                            <span>9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-row closed">
+                            <span>Sunday & Monday</span>
+                            <span>Closed</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-links">
+                        <a href="tel:5553829011" class="btn btn-outline"><i class="fa-solid fa-phone"></i> (555) 382-9011</a>
+                        <a href="mailto:hello@aurahair.com" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Email Us</a>
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <div class="map-placeholder">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h4>AURA Hair Studio</h4>
+                        <p>742 Evergreen Terrace, Suite 102<br>New York, NY 10001</p>
+                        <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="fa-solid fa-diamond-turn-right"></i> Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-mark">AURA</span>
+                    <span class="logo-sub">HAIR STUDIO</span>
+                </a>
+                <p>Crafting confidence through art, precision, and personal style.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#stylists">Stylists</a>
+                <a href="#gallery">Lookbook</a>
+                <a href="#booking">Book Now</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="year"></span> AURA Hair Studio. All Rights Reserved. Designed with elegance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
